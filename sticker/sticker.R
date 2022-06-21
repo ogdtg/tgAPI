@@ -18,9 +18,9 @@ test = sticker(
   s_y = .84,
   s_width = 2,
   s_height = 5,
-  #filename = "sticker/tgapi_icon.png",
+  filename = "sticker/tgapi_icon.png",
   h_fill = "white",
   h_color = "grey"
 )
 
-ggplot2::ggsave(test,filename ="sticker/tgapi_icon_600.png",device = "png",width = 400,height=400, units = "px")
+#ggplot2::ggsave(test,filename ="sticker/tgapi_icon_600.png",device = "png",width = 400,height=400, units = "px")
