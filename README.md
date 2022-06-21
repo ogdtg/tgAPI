@@ -1,7 +1,7 @@
 
 # tgAPI
 
-![](https://raw.githubusercontent.com/ColinFay/attempt/master/README-fig/attempt_hex_200.png)
+![](https://raw.githubusercontent.com/FLorenz/tgapi/master/sticker/tgapi_icon.png)
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
