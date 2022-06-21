@@ -2,7 +2,7 @@
 # tgAPI
 
 ![](https://raw.githubusercontent.com/FLorenz/tgapi/master/sticker/tgapi_icon.png=250x250)
- <img src="https://raw.githubusercontent.com/FLorenz/tgapi/master/sticker/tgapi_icon.png" width="400" height="400">
+ <img src="https://raw.githubusercontent.com/FLorenz/tgapi/master/sticker/tgapi_icon.png" width="300" height="300">
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
