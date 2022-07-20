@@ -14,7 +14,7 @@ You can install the development version of tgAPI from [GitHub](https://github.co
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ogdtg/tgapi")
+devtools::install_github("ogdtg/tgAPI")
 ```
 
 ## Example
