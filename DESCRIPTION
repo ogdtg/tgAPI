@@ -9,9 +9,11 @@ Description: More about what it does (maybe more than one line)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 Imports: 
     attempt,
     glue,
     httr,
-    jsonlite
+    jsonlite,
+    ows4R,
+    stringr

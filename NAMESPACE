@@ -3,6 +3,8 @@
 export(get_catalog)
 export(get_dataset)
 export(get_field_description)
+export(get_geo_data)
+export(get_geo_features)
 importFrom(attempt,stop_if_not)
 importFrom(glue,glue)
 importFrom(httr,GET)
