@@ -1,7 +1,6 @@
 
 # tgAPI
 
-![](https://raw.githubusercontent.com/FLorenz/tgapi/master/sticker/tgapi_icon.png=250x250)
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -17,7 +16,7 @@ You can install the development version of tgAPI from [GitHub](https://github.co
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("FLorenz/tgapi")
+devtools::install_github("ogdtg/tgAPI")
 ```
 
 ## Example
