@@ -8,6 +8,15 @@
 #' @seealso \code{\link[ows4R]{WFSClient}}
 #'
 get_wfs <- function(dataset_id) {
+
+  geo_link <- get_url_from_opendataswiss(dataset_id)
+
+  if (is.null(geo_link)){
+    geo_link = ""
+  }
+
+  if (!stringr::str_detect(geo_link,"^https://ows.*")) {
+
   res <-
     httr::GET(glue::glue(
       "https://data.tg.ch/api/v2/catalog/datasets/{dataset_id}"
@@ -18,14 +27,14 @@ get_wfs <- function(dataset_id) {
   }
 
   metas <- httr::content(res)
-
   geo_link <- metas$dataset$metas$default$attributions[[1]]
+  }
 
   if (is.null(geo_link)){
     stop(glue::glue("No ows.geo.tg found. Is the selected dataset really a geo dataset? Please check on
          https://data.tg.ch/explore/dataset/{dataset_id}/information/"))
   }
-  if (!stringr::str_detect(geo_link,"^https://ows.geo.tg.ch/.*")){
+  if (!stringr::str_detect(geo_link,"^https://ows.*")){
     stop(glue::glue("Dataset does not contain ows.geo.tg link. Is the selected dataset really a geo dataset? Please check on
          https://data.tg.ch/explore/dataset/{dataset_id}/information/"))
   }
@@ -36,3 +45,5 @@ get_wfs <- function(dataset_id) {
 
   return(wfs)
 }
+
+
