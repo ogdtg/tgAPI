@@ -17,7 +17,7 @@ get_wfs <- function(dataset_id) {
     stop(glue::glue("{dataset_id} is not a valid dataset_id on data.tg.ch"))
   }
 
-  metas <- content(res)
+  metas <- httr::content(res)
 
   geo_link <- metas$dataset$metas$default$attributions[[1]]
 
