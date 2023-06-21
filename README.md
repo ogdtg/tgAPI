@@ -51,7 +51,9 @@ It is recommended to download one feature at a time and not all features at once
 features <- get_geo_features("erdwarme")
 ```
 
-You receive a dataset with all possible features. Now you can chose a feature you want to get the data from and downlaod it with the `get_geo_data` function.
+You receive a dataset with all possible features. Now you can chose a feature you want to get the data from and downlaod it with the `get_geo_data` function. 
+
+**Please note that some features might not be downloadable because they are not Open Government Data, yet**
 
 ``` r
 geo_data <- get_geo_data(dataset_id = "erdwarme", feature = "Erdwärmesondenbohrungen")
