@@ -49,7 +49,10 @@ get_geo_data <- function(dataset_id, feature=NULL) {
 
   ft <- caps$findFeatureTypeByName(rel_fts)
   if(length(ft)>0){
-    data <- ft$getFeatures()
+    data <- tryCatch({ft$getFeatures()
+      },error = function(cond){
+        stop(glue::glue("Feature could not be retrieved. For more information please visit https://data.tg.ch/explore/dataset/{dataset_id}/information/ or contact us under ogd@tg.ch"))
+      })
     return(data)
   } else {
     stop("Feature is not valid")

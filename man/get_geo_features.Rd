@@ -15,3 +15,6 @@ data.frame with the available features (layers)
 \description{
 Returns a data.frame with the available features (layers) for the given dataset_id
 }
+\details{
+Please note that some Features are not available via this process.
+}
