@@ -51,6 +51,8 @@ features <- get_geo_features("erdwarme")
 
 This will provide you with a dataset containing all the available features. You can then choose a specific feature from which you wish to retrieve the data and download it using the `get_geo_data` function.
 
+Larger Geodata will be downloaded in slices of 1000 features per request, to avoid memory overload.
+
 
 ``` r
 geo_data <- get_geo_data(dataset_id = "erdwarme", feature = "Erdwärmesondenbohrungen")
