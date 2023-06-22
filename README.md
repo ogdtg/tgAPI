@@ -8,7 +8,7 @@
 
 The purpose of tgAPI is to enable access to data from the [Open Government Data (OGD) portal of the Cantone of Thurgau, Switzerland](https://data.tg.ch/pages/start/) via API calls.
 
-*Release Note 20.06.2023: From now on it is also possible to retrieve geo data from the portal.**
+*Release Note 20.06.2023: From now on it is also possible to retrieve geo data from the portal.*
 
 ## Installation
 

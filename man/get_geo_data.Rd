@@ -4,12 +4,14 @@
 \alias{get_geo_data}
 \title{Get Geo Data}
 \usage{
-get_geo_data(dataset_id, feature = NULL)
+get_geo_data(dataset_id, feature = NULL, bbox = NULL)
 }
 \arguments{
 \item{dataset_id}{dataset_id from the catalog ( \code{\link[tgAPI]{getCatalog}})}
 
 \item{feature}{the name or the title of a feature. If the feature is NULL, the first feature in the feature table will be used. Provide "all" to receive all features in a list of data.frames.}
+
+\item{bbox}{a character string of the bbox to restrict the request to a specific geographic region (for example: `"2670694.24166528787463903,1243765.72999201575294137,2774916.42190200183540583,1287552.7291286657564342"`) (only for large features)}
 }
 \value{
 a data.frame or a list of data.frames usable with sf

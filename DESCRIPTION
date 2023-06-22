@@ -15,5 +15,8 @@ Imports:
     glue,
     httr,
     jsonlite,
+    magrittr,
     ows4R,
-    stringr
+    sf,
+    stringr,
+    utils
