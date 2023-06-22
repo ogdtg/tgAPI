@@ -51,7 +51,6 @@ features <- get_geo_features("erdwarme")
 
 This will provide you with a dataset containing all the available features. You can then choose a specific feature from which you wish to retrieve the data and download it using the `get_geo_data` function.
 
-**Please note that certain features may not be downloadable if they are not yet classified as Open Government Data.**
 
 ``` r
 geo_data <- get_geo_data(dataset_id = "erdwarme", feature = "Erdwärmesondenbohrungen")
