@@ -21,6 +21,7 @@ get_geo_feature_slice_vec <- function(num_fts,count_num, wfs,feature,bbox = NULL
   counter <-  0
   #count_num = 1000
   df_nrow <- count_num
+  df_list <- list()
 
   while (df_nrow == count_num) {
     df_list[[paste0(counter)]] <-
@@ -35,7 +36,7 @@ get_geo_feature_slice_vec <- function(num_fts,count_num, wfs,feature,bbox = NULL
 
   }
 
-  data <- df_list %>% bind_rows()
+  data <- df_list %>% dplyr::bind_rows()
 
   close(pb)
 

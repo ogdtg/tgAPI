@@ -12,6 +12,7 @@ LazyData: true
 RoxygenNote: 7.2.1
 Imports: 
     attempt,
+    dplyr,
     glue,
     httr,
     jsonlite,
